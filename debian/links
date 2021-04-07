@@ -1,0 +1,49 @@
+# Hey, Emacs!  This is a -*-conf-*- file.
+
+# Same symlinks as binutils ships.
+/usr/bin/ld                            /usr/lib/compat-ld/ld
+/usr/bin/ld                            /usr/lib/gold-ld
+
+# Same name but with "llvm" in front.
+/usr/bin/llvm-ar                       /usr/bin/ar
+/usr/share/man/man1/llvm-ar.1.gz       /usr/share/man/man1/ar.1.gz
+/usr/bin/llvm-as                       /usr/bin/as
+/usr/share/man/man1/llvm-as.1.gz       /usr/share/man/man1/as.1.gz
+/usr/bin/llvm-dwp                      /usr/bin/dwp
+/usr/share/man/man1/llvm-dwp.1.gz      /usr/share/man/man1/dwp.1.gz
+/usr/bin/llvm-nm                       /usr/bin/nm
+/usr/share/man/man1/llvm-nm.1.gz       /usr/share/man/man1/nm.1.gz
+/usr/bin/llvm-objcopy                  /usr/bin/objcopy
+/usr/share/man/man1/llvm-objcopy.1.gz  /usr/share/man/man1/objcopy.1.gz
+/usr/bin/llvm-objdump                  /usr/bin/objdump
+/usr/share/man/man1/llvm-objdump.1.gz  /usr/share/man/man1/objdump.1.gz
+/usr/bin/llvm-ranlib                   /usr/bin/ranlib
+/usr/share/man/man1/llvm-ranlib.1.gz   /usr/share/man/man1/ranlib.1.gz
+/usr/bin/llvm-readelf                  /usr/bin/readelf
+/usr/share/man/man1/llvm-readelf.1.gz  /usr/share/man/man1/readelf.1.gz
+/usr/bin/llvm-size                     /usr/bin/size
+/usr/share/man/man1/llvm-size.1.gz     /usr/share/man/man1/size.1.gz
+/usr/bin/llvm-strings                  /usr/bin/strings
+/usr/share/man/man1/llvm-strings.1.gz  /usr/share/man/man1/strings.1.gz
+/usr/bin/llvm-strip                    /usr/bin/strip
+/usr/share/man/man1/llvm-strip.1.gz    /usr/share/man/man1/strip.1.gz
+
+# Wild guesses
+/usr/bin/llvm-cxxfilt                  /usr/bin/c++filt
+/usr/share/man/man1/llvm-cxxfilt.1.gz  /usr/share/man/man1/c++filt.1.gz
+/usr/bin/lld                           /usr/bin/gold
+/usr/share/man/man1/lld.1.gz           /usr/share/man/man1/gold.1.gz
+/usr/bin/lld                           /usr/bin/ld
+/usr/share/man/man1/lld.1.gz           /usr/share/man/man1/ld.1.gz
+/usr/bin/lld                           /usr/bin/ld.bfd
+/usr/share/man/man1/lld.1.gz           /usr/share/man/man1/ld.bfd.1.gz
+/usr/bin/lld                           /usr/bin/ld.gold
+/usr/share/man/man1/lld.1.gz           /usr/share/man/man1/ld.gold.1.gz
+
+# FIXME: no equivalent???
+#/usr/bin/addr2line
+#/usr/share/man/man1/addr2line.1.gz
+#/usr/bin/elfedit
+#/usr/share/man/man1/elfedit.1.gz
+#/usr/bin/gprof
+#/usr/share/man/man1/gprof.1.gz

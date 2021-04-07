@@ -1,0 +1,25 @@
+Source: binutils-is-llvm
+Section: metapackages
+Priority: optional
+Standards-Version: 4.5.1
+Maintainer: Trent W. Buck <trentbuck@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+Rules-Requires-Root: no
+
+Package: binutils-is-llvm
+Architecture: all
+Depends:
+ ${misc:Depends},
+ llvm,
+# replaces ld.bfd and ld.gold
+ lld
+Provides: binutils
+Replaces: binutils
+Conflicts: binutils
+Description: use llvm as binutils
+ binutils does not receive security support due to this:
+ .
+  Only suitable for trusted content; see
+  https://lists.debian.org/msgid-search/87lfqsomtg.fsf@mid.deneb.enyo.de
+ .
+ Symlink e.g. strings -> llvm-strings and see what breaks.
