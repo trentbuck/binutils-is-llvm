@@ -1,4 +1,21 @@
-Problem: I want ``check-support-status`` to be happy, but I need ``needrestart``::
+Status
+============================================================
+As at 2021-04-07:
+
+• binutils-is-llvm **WORKS** for ``needrestart -p`` (on Debian 11 bullseye).
+
+  https://bugs.debian.org/986507 is an alternative.
+
+• binutils-is-llvm **DOES NOT WORK** on for ``apt install build-essential``, because
+  that has a versioned dependency on ``binutils (>= X)``.
+
+  To fix this, I would need to either make debian/changelog have corresponding version, or
+  change my ``Provides: binutils`` to ``Provides: binutils (= X)``.
+
+
+Problem
+============================================================
+I want ``check-support-status`` to be happy, but I need ``needrestart``::
 
     bash5$ check-support-status
     Limited security support for one or more packages
