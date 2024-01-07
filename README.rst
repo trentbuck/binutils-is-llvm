@@ -66,4 +66,4 @@ Has anyone tried to solve this already?::
     <twb> I'm thinking along those lines, yes.
           But I'm not sure how well the different implementation's arguments will line up.
           So it would need quite a bit of testing, and
-          I was hoping someone else had already gotten annoyed enough to do it :-)
+          I was hoping someone else had already gotten annoyed enough to do it :-) 
